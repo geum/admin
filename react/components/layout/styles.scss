@@ -1,0 +1,16 @@
+body {
+  overflow-x: hidden;
+}
+
+.geum-admin-layout.default {
+  .content-wrapper {
+    min-width: 100vw;
+  }
+
+  @media (min-width: 768px) {
+    .content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.geum-admin-common.header {
+  padding-left: 6px;
+  padding-right: 6px;
+  
+  .navbar-toggler {
+    border: none;
+    outline: none;
+
+    .navbar-toggler-icon {
+      background-image: none;
+    }
+
+    .navbar-toggler-icon::after {
+      align-items: center;
+      content: "\f107";
+      display: flex;
+      font-family: 'Font Awesome 5 Free';
+      font-size: 20px;
+      height: 100%;
+      justify-content: center;
+    }
+  }
+
+  .dropdown-toggle {
+    font-size: 12px;
+
+    &:after {
+      border: none;
+      content: '\f107';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+  }
+
+  .dropdown-menu {
+    left: -100px;
+  }
+
+  .sidebar-toggle {
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.5);
+    outline: none;
+  }
+}
+
+.geum-admin-common.sidebar {
+  background-color: #43425D;
+  min-height: 100vh;
+  min-width: 230px;
+
+  .branding {
+    background-color: #3C3B53;
+    height: 55px;
+
+    h1 {
+      color: #FFF;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  .menu {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul * {
+      color: #FFF;
+      font-weight: lighter;
+      text-decoration: none;
+    }
+
+    ul li > a {
+      &:hover {
+        background-color: #3C3B53;
+      }
+    }
+
+    ul li ul li {
+      a {
+        border-left: 4px solid transparent;
+      }
+
+      a:hover {
+        background-color: #36354A;
+        border-left: 4px solid #A3A0FB;
+      }
+
+      .menu-detail {
+        padding-left: 35px !important;
+
+        .toggle {
+          display: none;
+        }
+      }
+    }
+
+    .menu-items {
+      .icon {
+        font-size: 14px;
+
+        i {
+          color: #A5A4BF;
+        }
+      }
+
+      .label {
+        font-size: 12px;
+      }
+
+      .toggle {
+        font-size: 12px;
+      }
+    }
+  }
+}
