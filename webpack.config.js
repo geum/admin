@@ -1,7 +1,7 @@
 const path = require('path');
 const production = process.env.NODE_ENV === 'production';
 const filename = production ? 'react.prod.js' : 'react.dev.js';
-console.log(path.resolve(__dirname, '../node_modules'));
+
 module.exports = {
   entry: path.join(__dirname, 'react', 'index.js'),
   output: {
@@ -33,8 +33,7 @@ module.exports = {
       '@admin': path.join(__dirname, 'react'),
       '@components': path.join(__dirname, 'react', 'components'),
       '@pages': path.join(__dirname, 'react', 'pages'),
-      '@styles': path.join(__dirname, 'react', 'styles'),
-
+      '@styles': path.join(__dirname, 'react', 'styles')
     }
   },
 

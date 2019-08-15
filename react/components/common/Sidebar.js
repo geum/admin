@@ -11,7 +11,7 @@ const Container = posed.nav({
   open: {
     delayChildren: 300,
     marginLeft: 0,
-    staggerChildren: 50
+    staggerChildren: 200
   },
   closed: {
     delay: 300,
@@ -51,9 +51,9 @@ const Sidebar = props => {
     return (
       <ul className="menu-items">
         {items.map(item => (
-          <MenuItem className="menu-item">
+          <MenuItem className="menu-item" key={item.href}>
             <Link
-              to="#"
+              to={item.href}
               className="menu-content d-block"
             >
               <div
@@ -71,9 +71,8 @@ const Sidebar = props => {
                   <i className="fa fa-angle-down"></i>
                 </div>
               </div>
-
-              {Array.isArray(item.menu) && renderMenu(item.menu)}
             </Link>
+            {Array.isArray(item.menu) && renderMenu(item.menu)}
           </MenuItem>
         ))}
       </ul>

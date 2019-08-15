@@ -21,28 +21,37 @@ const Default = props => {
    */
   const [menu, setMenu] = useState([
     {
+      label: 'Dashboard',
+      icon: 'fa fa-tachometer-alt',
+      href: '/admin/dashboard'
+    },
+    {
       label: 'System',
       icon: 'fa fa-server',
       href: '#',
       menu: [
         {
-          label: 'System',
-          icon: 'fa fa-server',
-          href: '#'
+          label: 'Schemas',
+          icon: 'fa fa-database',
+          href: '/admin/system/schema/search'
         },
         {
-          label: 'System',
-          icon: 'fa fa-server',
-          href: '#'
+          label: 'Fieldset',
+          icon: 'fa fa-sliders-h',
+          href: '/admin/system/fieldset/search'
+        },
+        {
+          label: 'Configuration',
+          icon: 'fa fa-cog',
+          href: '/admin/system/configuration/search'
         }
       ]
-    },
-    {
-      label: 'System',
-      icon: 'fa fa-server',
-      href: '#'
     }
   ]);
+
+  const getActiveMenu = items => {
+
+  }
 
   /**
    * Listen for media query effect

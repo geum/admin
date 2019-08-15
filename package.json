@@ -21,8 +21,5 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --mode production",
     "watch": "NODE_ENV=development webpack --mode development --watch"
-  },
-  "dependencies": {
-    "rollup-plugin-alias": "^1.5.2"
   }
 }
