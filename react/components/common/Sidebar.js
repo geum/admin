@@ -19,6 +19,11 @@ const Container = posed.nav({
   }
 });
 
+/**
+ * Animated posed menu item
+ *
+ * @type {Component}
+ */
 const MenuItem = posed.li({
   open: {
     left: 0,
@@ -36,6 +41,12 @@ const MenuItem = posed.li({
  * @param {Object} props
  */
 const Sidebar = props => {
+  /**
+   * Renders the menu items
+   *
+   * @param  {Object} items
+   * @return {Component}
+   */
   const renderMenu = items => {
     return (
       <ul className="menu-items">
@@ -45,7 +56,9 @@ const Sidebar = props => {
               to="#"
               className="menu-content d-block"
             >
-              <div className="menu-detail d-flex p-3 align-items-center">
+              <div
+                className="menu-detail d-flex p-3 align-items-center"
+              >
                 <div className="icon">
                   <i className={item.icon}></i>
                 </div>

@@ -10,9 +10,15 @@ const Default = props => {
   /**
    * Sidebar open/closed state
    *
-   * @type {Boolean|Function}
+   * @type {Boolean,Function}
    */
   const [sidebarOpen, setSidebarOpen] = useState(true);
+
+  /**
+   * Temporary menu state
+   *
+   * @type {Array,Function}
+   */
   const [menu, setMenu] = useState([
     {
       label: 'System',

@@ -1,5 +1,10 @@
 import React from 'react';
 
+/**
+ * Default Admin Page
+ *
+ * @param {Object} props
+ */
 const Default = props => {
   return (
     <div className="row">
