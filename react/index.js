@@ -1,6 +1,6 @@
-import '@admin/index.scss';
+import '@root/index.scss';
 
-import Admin from '@admin/Admin';
+import Admin from '@root/Admin';
 import * as Layout from '@components/layout';
 
 export {

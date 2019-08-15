@@ -49,10 +49,6 @@ const Default = props => {
     }
   ]);
 
-  const getActiveMenu = items => {
-
-  }
-
   /**
    * Listen for media query effect
    *
@@ -70,16 +66,6 @@ const Default = props => {
   }, []);
 
   /**
-   * Handle sidebar toggle
-   *
-   * @param  {Event} e
-   * @return {null}
-   */
-  const handleToggle = e => {
-    setSidebarOpen(!sidebarOpen);
-  }
-
-  /**
    * Renders the component
    *
    * @type {Component}
@@ -89,7 +75,7 @@ const Default = props => {
       <Common.Sidebar open={sidebarOpen} menu={menu} />
 
       <div className="content-wrapper">
-        <Common.Header onToggle={handleToggle} />
+        <Common.Header onToggle={e => setSidebarOpen(!sidebarOpen)} />
 
         <div className="container-fluid">
           {props.children}

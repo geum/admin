@@ -1,4 +1,5 @@
 import React from 'react';
+import { Layout } from '@components';
 
 /**
  * Default Admin Page
@@ -7,11 +8,13 @@ import React from 'react';
  */
 const Default = props => {
   return (
-    <div className="row">
-      <div className="col">
-        <h1>Default Page</h1>
+    <Layout.Default>
+      <div className="row">
+        <div className="col">
+          <h1>Default Page</h1>
+        </div>
       </div>
-    </div>
+    </Layout.Default>
   )
 }
 
